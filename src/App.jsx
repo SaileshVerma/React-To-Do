@@ -21,9 +21,10 @@ function App() {
   function toggleToDo(id, isChecked) {
     setTodoList((currentToDos) => {
       return currentToDos.map((item) => {
-        if (item.id == id) {
-          return { ...item, isChecked };
+        if (item.id === id) {
+          return { id: item.id, title: item.title, isChecked };
         }
+        return item;
       });
     });
   }
