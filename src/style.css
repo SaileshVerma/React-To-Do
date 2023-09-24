@@ -139,3 +139,11 @@ body {
 .list li:has(input:checked) label:hover::before {
   background: hsl(200, 100%, 30%);
 }
+
+::placeholder {
+  color: rgb(168, 225, 249, 0.5);
+}
+
+.strike {
+  text-decoration: line-through;
+}
